@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Informe a hora atual: <input type="number" name="hora" id="hora">
+    <button id="btn">Verificar</button>
+    <div id="res"></div>
+
+    <script>
+        const btn = document.querySelector('#btn')
+        btn.addEventListener('click', clicar)
+
+        function clicar() {
+            const hora = Number(document.querySelector('#hora').value)
+            const res = document.querySelector('#res')
+            res.innerHTML = `<p>A hora digitada foi ${hora} horas</p>`
+
+            if (hora < 0 || hora > 23) {
+                res.innerHTML += `<p>Hora inválida</p>`
+            } else if (hora < 12) {
+                res.innerHTML += `<p>Bom dia</p>`
+            } else if (hora < 18) {
+                res.innerHTML += `<p>Boa tarde</p>`
+            } else {
+                res.innerHTML += `<p>Boa noite</p>`
+            }
+        }
+
+    </script>
+</body>
+</html>
