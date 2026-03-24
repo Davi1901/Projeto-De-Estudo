@@ -7,6 +7,7 @@ Este repositório contém uma coleção de exercícios e projetos desenvolvidos 
 - `aula13/`: Ambiente de testes com arquivos HTML e JS para prática de conceitos básicos.
 - `ex015/`: Projeto interativo que identifica idade e gênero com base em dados inseridos pelo usuário.
 - `exercicio1.html/`: Exercício com manipulação de imagens e estilos conforme o período do dia.
+- [PokeAPI Project]: Projeto integrador usando JavaScript assíncrono e iteradores.
 
 ## 🧠 Conceitos Abordados
 
